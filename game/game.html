@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Пиксельный Тир: Бросок в цель!</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            background: #87CEEB;
+            font-family: 'Courier New', monospace;
+            text-align: center;
+        }
+        canvas {
+            display: block;
+            margin: 0 auto;
+            background: #87CEEB;
+        }
+        #restart {
+            padding: 10px 20px;
+            font-size: 16px;
+            background: #FF6347;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        #message {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Пиксельный Тир: Бросок в цель!</h1>
+    <canvas id="gameCanvas" width="800" height="500"></canvas>
+    <button id="restart">Попробовать снова</button>
+    <div id="message">Ты прошёл испытание!</div>
+    <script src="game.js"></script>
+</body>
+</html>
